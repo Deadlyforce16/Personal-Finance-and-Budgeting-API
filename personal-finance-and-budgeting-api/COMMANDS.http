@@ -1,0 +1,64 @@
+//H2 DATABASE CONSOLE LINK:
+//http://localhost:8080/h2-console
+//BUDGET COMMANDS:
+### Create a new budget
+POST http://localhost:8080/api/budgets
+Content-Type: application/json
+
+{
+  "name": "Groceries",
+  "amount": 300.00
+}
+
+### Get all budgets
+GET http://localhost:8080/api/budgets
+
+### Get a budget by ID
+GET http://localhost:8080/api/budgets/1
+
+### Update a budget by ID
+PUT http://localhost:8080/api/budgets/1
+Content-Type: application/json
+
+{
+  "name": "Groceries",
+  "amount": 350.00
+}
+
+### Delete a budget by ID
+DELETE http://localhost:8080/api/budgets/1
+
+///////////////////////////////////////////
+//GOAL COMMANDS:
+### Create a new goal
+POST http://localhost:8080/api/goals
+Content-Type: application/json
+
+{
+  "name": "Vacation",
+  "targetAmount": 2000.00,
+  "currentAmount": 500.00,
+  "description": "I need a good vacation."
+}
+
+### Get all goals
+GET http://localhost:8080/api/goals
+
+### Get a goal by ID
+GET http://localhost:8080/api/goals/1
+
+### Update a goal by ID
+PUT http://localhost:8080/api/goals/1
+Content-Type: application/json
+
+{
+  "name": "Vacation",
+  "targetAmount": 2500.00,
+  "currentAmount": 600.00,
+  "description": "I need a good vacation."
+}
+
+### Delete a goal by ID
+DELETE http://localhost:8080/api/goals/1
+
+
